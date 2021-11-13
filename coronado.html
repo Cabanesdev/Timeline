@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TimeLine</title>
+		<script
+			src="https://kit.fontawesome.com/5e3bcd1429.js"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+			.container {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.container-header {
+				display: flex;
+				justify-content: space-between;
+				overflow: hidden;
+				padding: 20px 10px;
+				border: 5px solid red;
+			}
+
+			h1 {
+				display: inline;
+				margin-left: auto;
+				font-family: 'Fira Code', monospace;
+			}
+
+			.btn {
+				border: 1px solid black;
+				border-radius: 5%;
+				padding: 10px 40px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1rem;
+			}
+
+			.btn-github {
+				background-color: #171515;
+			}
+
+			.btn-twitter {
+				background-color: #00acee;
+			}
+
+			a {
+				color: white;
+				text-decoration: none;
+			}
+
+			.container-main {
+				display: flex;
+				flex-direction: column;
+				margin-top: 10%;
+				background-color: red;
+			}
+
+			.container-main__timeline {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				width: 50%;
+				background-color: blue;
+			}
+			.vertical {
+				border-left: 6px solid black;
+				margin: 0 auto;
+				height: 150px;
+			}
+			.card {
+				position: relative;
+				background: #333c42;
+				padding: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-header">
+				<div class="container-header__logo">
+					<span><i class="fa-solid fa-code fa-2x"></i></span>
+					<h1>Time Line</h1>
+				</div>
+				<div class="container-header__nav">
+					<nav>
+						<button class="btn btn-github">
+							<a href="#"><i class="fa-brands fa-github"></i></a>
+						</button>
+						<button class="btn btn-twitter">
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						</button>
+					</nav>
+				</div>
+			</div>
+			<div class="container-main">
+				<div class="container-main__timeline">
+					<div class="card">
+						<h2>Title Card</h2>
+						<p>contenido Carta</p>
+						<span class="cd-date">Noviembre</span>
+					</div>
+					<div class="vertical"></div>
+					<div class="card">
+						<h2>Title Card</h2>
+						<p>contenido Carta</p>
+						<span class="cd-date">Noviembre</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
