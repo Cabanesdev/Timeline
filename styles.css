@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+body {
+	background-color: #e6e8e6;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-header {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: 20px 10px;
+}
+
+h1 {
+	display: inline;
+	margin-left: auto;
+	font-family: 'Fira Code', monospace;
+}
+
+.btn {
+	border: 1px solid black;
+	background-color: #eee5e9;
+	border-radius: 5%;
+	padding: 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.btn-github {
+	background-color: #171515;
+}
+
+.btn-twitter {
+	background-color: #00acee;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.container-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.container-main__options {
+	display: flex;
+	padding: 2.5%;
+}
+
+.container-main__timeline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+}
+
+.vertical {
+	border-left: 6px solid #1a1423;
+	height: 150px;
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	border-radius: 25px;
+	background: #267cd7;
+	padding: 1em;
+}
+
+.card > p {
+	word-break: break-word;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TimeLine</title>
+		<script
+			src="https://kit.fontawesome.com/5e3bcd1429.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-header">
+				<div class="container-header__logo">
+					<span><i class="fa-solid fa-code fa-2x"></i></span>
+					<h1>Time Line</h1>
+				</div>
+				<div class="container-header__nav">
+					<nav>
+						<button class="btn btn-github">
+							<a href="https://github.com/cabanesdev" target="_blank"
+								><i class="fa-brands fa-github"></i
+							></a>
+						</button>
+						<button class="btn btn-twitter">
+							<a href="https://twitter.com/cabanesdev" target="_blank"
+								><i class="fa-brands fa-twitter"></i
+							></a>
+						</button>
+					</nav>
+				</div>
+			</div>
+			<div class="container-main">
+				<div class="container-main__options">
+					<button class="btn" onclick="fillContent('frontend')">
+						Frontend
+					</button>
+					<button class="btn" onclick="fillContent('backend')">Backend</button>
+					<button class="btn" onclick="fillContent('extra')">Extra</button>
+				</div>
+				<div id="timeline" class="container-main__timeline"></div>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
