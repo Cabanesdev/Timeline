@@ -10,6 +10,7 @@
 		></script>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
 			body {
 				background-color: #e6e8e6;
 			}
@@ -58,31 +59,37 @@
 			.container-main {
 				display: flex;
 				flex-direction: column;
+				align-items: center;
 				margin-top: 2%;
 			}
 
 			.container-main__options {
 				display: flex;
-				justify-content: space-between;
 				padding: 2.5%;
 			}
 
 			.container-main__timeline {
 				display: flex;
 				flex-direction: column;
-				margin: 0 auto;
+				align-items: center;
 				width: 50%;
 			}
+
 			.vertical {
 				border-left: 6px solid #1a1423;
-				margin: 0 auto;
 				height: 150px;
 			}
+
 			.card {
 				position: relative;
+				width: 100%;
 				border-radius: 25px;
 				background: #267cd7;
 				padding: 1em;
+			}
+
+			.card > p {
+				word-break: break-word;
 			}
 		</style>
 	</head>
@@ -360,6 +367,7 @@
 					}
 				});
 			}
+
 			function cleanTimeLine() {
 				document.getElementById('timeline').innerHTML = '';
 			}
